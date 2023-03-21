@@ -1,0 +1,52 @@
+@import '../../../assets/styles/colors.scss';
+
+.empty {
+  padding: 6px 12px;
+  opacity: 0.6;
+}
+
+.selectList {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+  padding-top: 7px;
+  margin-bottom: 6px;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $ligthBlue;
+    border-radius: 5px;
+  }
+
+  li {
+    margin-right: 4px;
+    padding: 6px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $gray;
+    border-radius: 8px;
+
+    p {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+
+    svg {
+      margin-left: 8px;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+}

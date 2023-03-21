@@ -1,0 +1,31 @@
+@import '../../../assets/styles/colors.scss';
+
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $darkBlue;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &.active {
+    background-color: $ligthBlue;
+  }
+
+  input {
+    display: none;
+
+    &:checked + .iconDone {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .iconDone {
+    color: $white;
+    opacity: 0;
+    visibility: hidden;
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/shadow.scss';
+@import '../../../assets/styles/animation.scss';
+
+.menu {
+  width: 100%;
+  max-height: 400px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  @extend %shadow;
+  border-radius: 12px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  opacity: 0;
+  visibility: hidden;
+
+  justify-items: center;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $ligthBlue;
+    border-radius: 5px;
+  }
+
+  &.open {
+    opacity: 1;
+    visibility: visible;
+    @extend %showAnimPopup;
+  }
+
+  .search {
+    width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}

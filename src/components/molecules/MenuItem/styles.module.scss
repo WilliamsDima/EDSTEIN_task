@@ -1,0 +1,44 @@
+@import '../../../assets/styles/colors.scss';
+
+.item {
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 1px solid $gray;
+
+  &:first-child {
+    margin-top: -14px;
+  }
+
+  label {
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+
+    &:hover {
+      background-color: $gray;
+    }
+
+    .country {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    input {
+      width: 24px;
+      height: 24px;
+    }
+
+    p {
+      margin-left: 8px;
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  }
+}

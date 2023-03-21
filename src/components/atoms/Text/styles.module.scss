@@ -1,0 +1,15 @@
+@import '../../../assets/styles/typography.scss';
+
+.text {
+  &.p1 {
+    @extend %p1;
+  }
+
+  &.p2 {
+    @extend %p2;
+  }
+
+  &.p3 {
+    @extend %p3;
+  }
+}
